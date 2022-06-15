@@ -1,0 +1,581 @@
+:root {
+    --body-background-color: whitesmoke;
+    --logo-background-color: whitesmoke;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background-color: #140A01;
+        --logo-background-color: #140A01;
+    }
+}
+
+.logo {
+    width: 15%;
+    float: left;
+    padding-right: 85%;
+    background-color: var(--body-background-color);
+    border-radius: 0%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-background-color);
+}
+
+/* barre de navigation*/
+.nothere li {
+    background-color: #F67912;
+}
+
+.nothere li {
+    color: #F67912;
+}
+
+.nothere a {
+    color: #F67912;
+    background-color: #F67912;
+}
+
+.nav .nothere {
+    background-color: #F67912;
+}
+
+nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: block;
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul li {
+    float: left;
+    width: 10%;
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    margin-right: 3%;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-left: 2.5%;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav li {
+    list-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
+}
+
+nav .nothere a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px 15px;
+    font-size: 120%;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #F67912;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 15px;
+    font-size: 120%;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.nothere a:hover {
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #EC6F09;
+    border-bottom: 2px solid transparent;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2%;
+    overflow: hidden;
+    background-color: #F67912;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* au survol des catégories */
+.sous {
+    display: none;
+    background-color: #F67912;
+    position: absolute;
+    width: 25%;
+    z-index: 1000;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+    background-color: #F67912
+}
+
+.sous ul li {
+    background-color: #F67912;
+}
+
+.sous a {
+    padding: 15px;
+    border-bottom: none;
+    color: white;
+}
+
+.nothere .sous a {
+    padding: 15px;
+    border-bottom: none;
+    color: white;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.deroulant>a::after {
+    content: "▼";
+    font-size: 78%;
+}
+
+/* page1 */
+
+h1 {
+    font-size: 300%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #EC6F09;
+    padding-left: 5%;
+    padding-top: 30%;
+}
+
+h1 {
+    font-size: 300%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: #D96608;
+    padding-left: 5%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.image1 {
+    display: block;
+    width: 45%;
+    float: right;
+    border-radius: 1%;
+    padding-right: 5%;
+    padding-top: 7%;
+}
+
+/* boutons */
+.button {
+    position: relative;
+    padding-top: 10%;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.button1 {
+    position: absolute;
+    z-index: 5;
+    margin-top: 1%;
+    text-align: center;
+    border: none;
+    background-color: #f67912;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 12%;
+    border-radius: 40px;
+    margin-left: 35%;
+}
+
+.button1:hover {
+    background-color: white;
+    border: solid;
+    border-color: #f67912;
+}
+
+.button2 {
+    z-index: 5;
+    margin-top: 0%;
+    border: none;
+    background-color: #f67912;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 12%;
+    border-radius: 40px;
+    margin-right: 35%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.button2 p:hover {
+    color: #f67912;
+    text-decoration: none;
+}
+
+
+
+
+h6 {
+    color: white;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+p {
+    margin-top: 0%;
+    margin-left: 8%;
+    font-size: 150%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+.p:hover {
+    color: #f67912;
+    text-decoration: none;
+}
+
+.button2 {
+    text-decoration-color: aqua;
+    margin-top: 1%;
+    text-align: center;
+    border: none;
+    background-color: #f67912;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 10%;
+    border-radius: 20%;
+    margin-left: 60%;
+    margin-right: auto;
+}
+
+.button2:hover {
+    background-color: white;
+    border: solid;
+    border-color: #f67912;
+}
+
+
+h2 {
+    font-size: 275%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #D96608;
+    margin-left: 55%;
+    padding-top: 25%;
+    margin-right: 5%;
+}
+
+i {
+    color: #140A01;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 70%;
+    font-style: normal;
+    text-align: left;
+}
+
+.image2 {
+    display: block;
+    width: 45%;
+    float: left;
+    border-radius: 1%;
+    padding-left: 3%;
+    padding-top: 7%;
+}
+
+.ss-titre1 h4 {
+    margin-top: 23%;
+    margin-left: 8%;
+    color: #D96608;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-style: bold;
+    font-size: 270%;
+    margin-bottom: 25px;
+}
+
+h5 {
+    margin-top: 0%;
+    margin-left: 8%;
+    font-weight: normal;
+    font-size: 150%;
+}
+
+/* Cases & textes */
+.case {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 10px;
+}
+
+.case1 {
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    margin-left: 6%;
+    border: white;
+    border-radius: 15px;
+}
+
+.case1 i {
+    color: #F67912;
+    font-size: 125%;
+}
+
+.case1 p {
+    margin-left: 0%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.case2 {
+    z-index: 5;
+    background-color: white;
+    width: 40%;
+    margin-left: 54%;
+    border: white;
+    border-radius: 15px;
+
+}
+
+.case2 i {
+    color: #F67912;
+    font-size: 125%;
+}
+
+.case2 p {
+    margin-left: 0%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 150%;
+    padding-top: 3%;
+    padding-bottom: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*La loyauté des pratiques*/
+.ss-titre1_2 h4 {
+    margin-top: 10%;
+    margin-left: 8%;
+    color: #D96608;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 270%;
+}
+
+.superposition {
+    position: relative;
+    width: 100%;
+}
+
+.superposition img {
+    z-index: 2;
+    margin-top: 1%;
+    border-radius: 50%;
+    width: 25%;
+    margin-left: 17.5%;
+}
+
+.textesuperposition1 {
+    margin-top: -3%;
+    width: 30%;
+    background-color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 13%;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+.textesuperposition1 i {
+    color: grey;
+    font-size: 200%;
+}
+
+.textesuperposition2 {
+    position: static;
+    width: 30%;
+    margin-top: -3%;
+    background-color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 13%;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    margin-left: 55%;
+    border-radius: 15px;
+    line-height: 1.5;
+}
+
+.textesuperposition2 i {
+    color: grey;
+    font-size: 200%;
+}
+
+/* Et vos intérêts ? */
+.ss-titre1_3 h4 {
+    width: 50%;
+    margin-top: 30%;
+    margin-left: 8%;
+    color: #D96608;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 270%;
+}
+
+.image3 {
+    display: block;
+    width: 35%;
+    float: right;
+    border-radius: 1%;
+    padding-right: 5%;
+    padding-top: 20%;
+    padding-bottom: 0%;
+}
+
+.interets p {
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 5%;
+    line-height: 2;
+    padding-bottom: 0%;
+}
+
+/* Et votre recrutement ? */
+.recrutement {
+    width: 100%;
+    height: 300px;
+}
+
+.ss-titre1_4 h4 {
+    position: absolute;
+    margin-left: 8%;
+    width: 40%;
+    color: #D96608;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 270%;
+    margin-top: 40%;
+}
+
+.recrutement p {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 45%;
+    padding-top: 50%;
+    margin-left: 5%;
+    line-height: 1.3;
+}
+
+.image4 {
+    z-index: 1;
+    width: 40%;
+    float: right;
+    margin-left: 50%;
+    margin-right: 5%;
+    padding-top: 27%;
+}
+
+/* Préparation */
+.preparation {
+    position: absolute;
+    margin-top: 80%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+.preparation h4 {
+    text-align: center;
+    color: #D96608;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-size: 230%;
+    width: 100%;
+}
+
+.preparation p {
+    text-align: center;
+    float: left;
+    padding-right: 6%;
+}
+
+/* Bas de page */
+footer {
+    display: flex;
+    width: 99.4%;
+    justify-content: center;
+    margin-top: 150%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 0%;
+    background-color: #F67912;
+    border-radius: 10px;
+    color: white;
+}
